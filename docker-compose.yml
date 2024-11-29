@@ -1,0 +1,8 @@
+services:
+  web:
+    image: nginx
+    volumes:
+     - ./html/src:/usr/share/nginx/html:ro
+    ports:
+     - "9090:80"
+    restart: unless-stopped
