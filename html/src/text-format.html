@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatting</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .highlight {
+            color: crimson;
+            background-color: #f1f1f1;
+            padding: 0 4px;
+            font-size: 110%;
+        }
+
+        .example-box {
+            padding: 16px;
+            margin: 20px 0;
+            background-color: #E7E9EB;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+        }
+
+        .code-block {
+            background-color: #fff;
+            color: #000;
+            padding: 8px 12px;
+            margin: 16px 0;
+            border-left: 4px solid #4CAF50;
+            font-family: Consolas, Menlo, "Courier New", monospace;
+            font-size: 16px;
+            word-wrap: break-word;
+        }
+
+        .btn {
+            color: #FFFFFF;
+            background-color: #04AA6D;
+            border-radius: 5px;
+            font-size: 17px;
+            padding: 6px 18px;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+            user-select: none;
+            margin-bottom: 16px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin: 20px 0 10px;
+        }
+
+        p,
+        li {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>HTML Formatting Elements</h2>
+    <p>Formatting elements were designed to display special types of text:</p>
+    <ul>
+        <li><code class="highlight">&lt;b&gt;</code> - Bold text</li>
+        <li><code class="highlight">&lt;strong&gt;</code> - Important text</li>
+        <li><code class="highlight">&lt;i&gt;</code> - Italic text</li>
+        <li><code class="highlight">&lt;em&gt;</code> - Emphasized text</li>
+        <li><code class="highlight">&lt;mark&gt;</code> - Marked text</li>
+        <li><code class="highlight">&lt;small&gt;</code> - Smaller text</li>
+        <li><code class="highlight">&lt;del&gt;</code> - Deleted text</li>
+        <li><code class="highlight">&lt;ins&gt;</code> - Inserted text</li>
+        <li><code class="highlight">&lt;sub&gt;</code> - Subscript text</li>
+        <li><code class="highlight">&lt;sup&gt;</code> - Superscript text</li>
+    </ul>
+
+    <h2>HTML &lt;b&gt; and &lt;strong&gt; Elements</h2>
+    <p>The HTML <code class="highlight">&lt;b&gt;</code> element defines bold text, without any extra importance.</p>
+    <div class="example-box">
+        <h3>Example</h3>
+        <div class="code-block">
+            &lt;b&gt;This text is bold&lt;/b&gt;
+        </div>
+        <a class="btn" href="#">Try it Yourself »</a>
+    </div>
+    <p>The HTML <code class="highlight">&lt;strong&gt;</code> element defines text with strong importance.</p>
+    <div class="example-box">
+        <h3>Example</h3>
+        <div class="code-block">
+            &lt;strong&gt;This text is important!&lt;/strong&gt;
+        </div>
+        <a class="btn" href="#">Try it Yourself »</a>
+    </div>
+
+    <h2>HTML &lt;i&gt; and &lt;em&gt; Elements</h2>
+    <p>The HTML <code class="highlight">&lt;i&gt;</code> element defines a part of text in an alternate voice or mood.
+        The content inside is typically displayed in italic.</p>
+    <p><strong>Tip:</strong> The <code class="highlight">&lt;i&gt;</code> tag is often used to indicate a technical
+        term, a phrase from another language, etc.</p>
+    <div class="example-box">
+        <h3>Example</h3>
+        <div class="code-block">
+            &lt;i&gt;This text is italic&lt;/i&gt;
+        </div>
+        <a class="btn" href="#">Try it Yourself »</a>
+    </div>
+    <p>The HTML <code class="highlight">&lt;em&gt;</code> element defines emphasized text, typically displayed in
+        italic.</p>
+    <p><strong>Tip:</strong> A screen reader will pronounce the words in <code class="highlight">&lt;em&gt;</code> with
+        emphasis.</p>
+    <div class="example-box">
+        <h3>Example</h3>
+        <div class="code-block">
+            &lt;em&gt;This text is emphasized&lt;/em&gt;
+        </div>
+        <a class="btn" href="#">Try it Yourself »</a>
+    </div>
+    <h2>HTML &lt;small&gt; Element</h2>
+    <p>The HTML <code class="highlight">&lt;small&gt;</code> element defines smaller text:</p>
+    <div class="example-box">
+        <h3>Example</h3>
+        <div class="code-block">
+            &lt;small&gt;This is some smaller text.&lt;/small&gt;
+        </div>
+        <a class="btn" href="#">Try it Yourself »</a>
+    </div>
+
+    <h2>HTML &lt;mark&gt; Element</h2>
+    <p>The HTML <code class="highlight">&lt;mark&gt;</code> element defines text that should be marked or highlighted:
+    </p>
+    <div class="example-box">
+        <h3>Example</h3>
+        <div class="code-block">
+            &lt;p&gt;Do not forget to buy &lt;mark&gt;milk&lt;/mark&gt; today.&lt;/p&gt;
+        </div>
+        <a class="btn" href="#">Try it Yourself »</a>
+    </div>
+
+    <h2>HTML &lt;del&gt; Element</h2>
+    <p>The HTML <code class="highlight">&lt;del&gt;</code> element defines text that has been deleted from a document.
+        Browsers will usually strike a line through deleted text:</p>
+    <div class="example-box">
+        <h3>Example</h3>
+        <div class="code-block">
+            &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; red.&lt;/p&gt;
+        </div>
+        <a class="btn" href="#">Try it Yourself »</a>
+    </div>
+
+    <h2>HTML &lt;ins&gt; Element</h2>
+    <p>The HTML <code class="highlight">&lt;ins&gt;</code> element defines a text that has been inserted into a
+        document. Browsers will usually underline inserted text:</p>
+    <div class="example-box">
+        <h3>Example</h3>
+        <div class="code-block">
+            &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;.&lt;/p&gt;
+        </div>
+        <a class="btn" href="#">Try it Yourself »</a>
+    </div>
+
+    <h2>HTML &lt;sub&gt; Element</h2>
+    <p>The HTML <code class="highlight">&lt;sub&gt;</code> element defines subscript text, often used for chemical
+        formulas, like H<sub>2</sub>O:</p>
+    <div class="example-box">
+        <h3>Example</h3>
+        <div class="code-block">
+            &lt;p&gt;This is &lt;sub&gt;subscripted&lt;/sub&gt; text.&lt;/p&gt;
+        </div>
+        <a class="btn" href="#">Try it Yourself »</a>
+    </div>
+
+    <h2>HTML &lt;sup&gt; Element</h2>
+    <p>The HTML <code class="highlight">&lt;sup&gt;</code> element defines superscript text, often used for footnotes,
+        like WWW<sup>[1]</sup>:</p>
+    <div class="example-box">
+        <h3>Example</h3> 
+        <div class="code-block">
+            &lt;p&gt;This is &lt;sup&gt;superscripted&lt;/sup&gt; text.&lt;/p&gt;
+        </div>
+        <a class="btn" href="#">Try it Yourself »</a>
+    </div>
+</body>
+
+</html>
